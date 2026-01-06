@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_configurar"
+        android:title="Configurar mis datos"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Cerrar sesión"/>
+</menu>
+
+

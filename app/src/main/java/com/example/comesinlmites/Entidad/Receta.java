@@ -1,4 +1,4 @@
-package com.example.comesinlmites.entidad;
+package com.example.comesinlmites.Entidad;
 
 public class Receta {
     private int id;

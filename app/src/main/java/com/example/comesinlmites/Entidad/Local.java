@@ -1,4 +1,4 @@
-package com.example.comesinlmites.entidad;
+package com.example.comesinlmites.Entidad;
 
 public class Local {
     private int id;
