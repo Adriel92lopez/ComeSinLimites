@@ -45,4 +45,15 @@
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_drawer"/>
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/ic_food"
+        app:layout_anchorGravity="bottom|end" />
+
+
 </androidx.drawerlayout.widget.DrawerLayout>
