@@ -3,6 +3,7 @@ package com.example.comesinlmites.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,6 +32,7 @@ public class ComidaAdapter extends RecyclerView.Adapter<ComidaAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.tvNombre.setText(comidas.get(position));
+        // Más adelante: holder.imgComida.setImageResource(...)
     }
 
     @Override
@@ -39,11 +41,14 @@ public class ComidaAdapter extends RecyclerView.Adapter<ComidaAdapter.ViewHolder
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
+
         TextView tvNombre;
+        ImageView imgComida;
 
         ViewHolder(View itemView) {
             super(itemView);
             tvNombre = itemView.findViewById(R.id.tvNombreComida);
+            imgComida = itemView.findViewById(R.id.imgComida);
         }
     }
 }
