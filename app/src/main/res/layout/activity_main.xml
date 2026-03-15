@@ -45,15 +45,6 @@
         </LinearLayout>
 
         <!-- FLOATING ACTION BUTTON (⚠️ FIX CRASH) -->
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/ic_food"
-            app:layout_anchor="@id/bottom_navigation"
-            app:layout_anchorGravity="top|end"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
