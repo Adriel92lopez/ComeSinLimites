@@ -7,7 +7,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
+
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.example.comesinlmites.R;
 
@@ -33,6 +38,16 @@ public class ComidaAdapter extends RecyclerView.Adapter<ComidaAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.tvNombre.setText(comidas.get(position));
         // Más adelante: holder.imgComida.setImageResource(...)
+
+        holder.itemView.setOnClickListener(v -> {
+
+            NavController navController =
+                    Navigation.findNavController(v);
+
+            navController.navigate(R.id.MapaFragment);
+
+        });
+
     }
 
     @Override
