@@ -1,16 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_comidas"
+        android:id="@+id/HomeFragment"
         android:icon="@drawable/ic_food"
         android:title="Comidas"/>
 
     <item
-        android:id="@+id/nav_recetas"
+        android:id="@+id/RecetasFragment"
         android:icon="@drawable/ic_recipe"
         android:title="Recetas"/>
 
     <item
-        android:id="@+id/nav_lugares"
+        android:id="@+id/LugaresFragment"
         android:icon="@drawable/ic_location"
         android:title="Lugares"/>
 </menu>

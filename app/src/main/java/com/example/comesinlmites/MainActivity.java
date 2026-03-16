@@ -22,17 +22,18 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Toolbar (solo si existe en el XML)
+        // Toolbar
         if (binding.toolbar != null) {
             setSupportActionBar(binding.toolbar);
         }
 
-        // NavHostFragment seguro
+        // NavHostFragment
         NavHostFragment navHostFragment =
                 (NavHostFragment) getSupportFragmentManager()
                         .findFragmentById(R.id.nav_host_fragment_content_main);
 
         if (navHostFragment != null) {
+
             NavController navController = navHostFragment.getNavController();
 
             appBarConfiguration =
@@ -42,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
                     this,
                     navController,
                     appBarConfiguration
+            );
+
+            // ⭐ ESTA ES LA PARTE NUEVA (CONECTA EL BOTTOM NAVIGATION)
+            NavigationUI.setupWithNavController(
+                    binding.bottomNavigation,
+                    navController
             );
         }
     }
