@@ -15,7 +15,7 @@
         android:layout_marginBottom="8dp"/>
 
     <TextView
-        android:id="@+id/tvNombreUsuario"
+        android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre Usuario"
@@ -24,11 +24,19 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/tvEmailUsuario"
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="email@mail.com"
         android:textColor="@android:color/white"
         android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
 
 </LinearLayout>
